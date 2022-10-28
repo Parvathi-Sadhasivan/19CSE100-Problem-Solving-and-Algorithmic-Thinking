@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Parvathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:30:40 PM"/>
+        <attribute name="created" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTAtMjg7MDg6NTU6MzkgQU07MzIyOA=="/>
+        <attribute name="edited" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTAtMjg7MTA6MzA6NDAgUE07NDszMzMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="input of details"/>
+            <declare name="rollno" type="Integer" array="False" size=""/>
+            <input variable="rollno"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <declare name="address" type="String" array="False" size=""/>
+            <input variable="address"/>
+            <declare name="bloodgrp" type="String" array="False" size=""/>
+            <input variable="bloodgrp"/>
+            <declare name="phonenumber" type="Integer" array="False" size=""/>
+            <input variable="phonenumber"/>
+            <declare name="dept" type="String" array="False" size=""/>
+            <input variable="dept"/>
+            <output expression="rollno" newline="True"/>
+            <output expression="&quot;name is&quot;&amp;name" newline="True"/>
+            <output expression="address" newline="True"/>
+            <output expression="bloodgrp" newline="True"/>
+            <output expression="phonenumber" newline="True"/>
+            <output expression="dept" newline="True"/>
+            <comment text="declaring the variables going to be used"/>
+            <declare name="sem, subcode1, subcode2, subcode3" type="String" array="False" size=""/>
+            <declare name="mark1, total, avg, mark2, mark3" type="Integer" array="False" size=""/>
+            <input variable="sem"/>
+            <input variable="subcode1"/>
+            <input variable="mark1"/>
+            <input variable="mark2"/>
+            <input variable="mark3"/>
+            <input variable="subcode2"/>
+            <input variable="subcode3"/>
+            <comment text="calculating total of the subject marks"/>
+            <assign variable="total" expression="(mark1+mark2+mark3)"/>
+            <comment text="calculating its average"/>
+            <assign variable="avg" expression="total/3"/>
+            <comment text="output of the details"/>
+            <output expression="&quot;Sem:&quot;&amp;sem&amp;&quot; subject code 1:&quot;&amp;subcode1&amp;&quot; subject code 2:&quot;&amp;subcode2&amp;&quot; subject code 3:&quot;&amp;subcode3&amp;&quot; Mark 1:&quot;&amp;mark1&amp;&quot; Mark 2:&quot;&amp;mark2&amp;&quot; Mark 3:&quot;&amp;mark3&amp;&quot; Total:&quot;&amp;total&amp;&quot; Average:&quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+    <function name="great" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="&quot;a&gt;b&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;b&gt;a&quot;" newline="True"/>
+                </else>
+            </if>
+            <call expression="great"/>
+        </body>
+    </function>
+</flowgorithm>

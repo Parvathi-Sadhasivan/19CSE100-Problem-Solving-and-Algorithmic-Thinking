@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Parvathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:33:14 PM"/>
+        <attribute name="created" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTAtMjg7MDg6NTU6MzkgQU07MzIyOA=="/>
+        <attribute name="edited" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTAtMjg7MTA6MzM6MTQgUE07MjszMzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring and inputting variables"/>
+            <declare name="rollno" type="Integer" array="False" size=""/>
+            <input variable="rollno"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="name"/>
+            <declare name="address" type="String" array="False" size=""/>
+            <input variable="address"/>
+            <declare name="bloodgrp" type="String" array="False" size=""/>
+            <input variable="bloodgrp"/>
+            <declare name="phonenumber" type="Integer" array="False" size=""/>
+            <input variable="phonenumber"/>
+            <declare name="dept" type="String" array="False" size=""/>
+            <input variable="dept"/>
+            <comment text="output of the details got"/>
+            <output expression="rollno" newline="True"/>
+            <output expression="&quot;name is&quot;&amp;name" newline="True"/>
+            <output expression="address" newline="True"/>
+            <output expression="bloodgrp" newline="True"/>
+            <output expression="phonenumber" newline="True"/>
+            <output expression="dept" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
