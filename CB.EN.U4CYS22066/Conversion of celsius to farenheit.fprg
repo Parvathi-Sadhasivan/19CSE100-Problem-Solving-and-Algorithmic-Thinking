@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:57:18 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTA0OzA5OjA1OjQyIEFNOzMwNTg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTA0OzEwOjU3OjE4IEFNOzI7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Converting celsius to farenheit"/>
+            <comment text="Declaring variables"/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter celsius&quot;" newline="True"/>
+            <comment text="Getting the required input"/>
+            <input variable="c"/>
+            <comment text="Convertion of celsius to farenheit&#13;&#10;"/>
+            <assign variable="f" expression="9/5*(c)+32"/>
+            <comment text="Printing the value"/>
+            <output expression="f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

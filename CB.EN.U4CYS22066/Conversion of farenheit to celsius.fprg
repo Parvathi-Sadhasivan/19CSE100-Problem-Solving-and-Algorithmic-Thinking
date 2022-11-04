@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:56:02 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTA0OzA5OjI1OjIzIEFNOzMwNTk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTA0OzA5OjI1OjI2IEFNOzE7Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTA0OzA5OjA1OjQyIEFNO2NvbnZlcnNpb24gb2YgZGVyZ3JlZSB0byBmYXJlbmhlaXQuZnByZzsxMDE2OQ=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTA0OzEwOjU2OjAyIEFNOzM7MzE2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Converting farenheit to celsius "/>
+            <comment text="Declaring variables"/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter farenheit&quot;" newline="True"/>
+            <comment text="Getting the required input"/>
+            <input variable="f"/>
+            <comment text="Convertion of farenheit to celsius &#13;&#10;"/>
+            <assign variable="c" expression="(f-32)*5/9"/>
+            <comment text="Printing the value"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
