@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 09:41:30 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTE4OzA5OjA2OjI1IEFNOzMwNjU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTExLTE4OzA5OjQxOjMwIEFNOzc7MzE3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="creating an account&#13;&#10;"/>
+            <declare name="balance, accno" type="Integer" array="False" size=""/>
+            <declare name="name, pin" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter the account number&quot;" newline="True"/>
+            <input variable="accno"/>
+            <output expression="&quot;What is the balance in your account?&quot;" newline="True"/>
+            <input variable="balance"/>
+            <output expression="&quot;select a 4-digit secret pin&quot;" newline="True"/>
+            <input variable="pin"/>
+            <comment text="withdrawal proccess"/>
+            <declare name="acno, wmoney" type="Integer" array="False" size=""/>
+            <declare name="pin1, n" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your account number for withdrawal:&quot;" newline="True"/>
+            <input variable="acno"/>
+            <output expression="&quot;Also enter your name&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="checking the requirements using if statements&#13;&#10;"/>
+            <if expression="accno==acno">
+                <then>
+                    <output expression="&quot;Enter pin&quot;" newline="True"/>
+                    <input variable="pin1"/>
+                    <if expression="pin1==pin">
+                        <then>
+                            <output expression="&quot;Enter the amount of money to be withdrawn(in rupees)&quot;" newline="True"/>
+                            <input variable="wmoney"/>
+                            <if expression="balance&gt;500&amp;&amp;wmoney&lt;=balance">
+                                <then>
+                                    <assign variable="balance" expression="balance -wmoney"/>
+                                    <output expression="&quot;Money has been successfully withdrawn&quot;" newline="True"/>
+                                    <output expression="&quot;Your current balance is:&quot;" newline="True"/>
+                                    <output expression="balance" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Unable to withdraw as the balance is less than 500 rupees&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Wrong pin number entered&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Account number does not match with the name&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
