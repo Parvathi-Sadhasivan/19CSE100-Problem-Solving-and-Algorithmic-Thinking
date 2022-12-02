@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:45:21 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzA5OjA4OjM5IEFNOzMwNjY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzEwOjI0OjUwIEFNOzE7Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzA5OjIxOjUxIEFNO211bHRpcGxpY2F0aW9uIHRhYmxlIHVzaW5nIGxvb3BzLmZwcmc7MTAwNDg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzEwOjQ1OjIxIEFNOzQ7MzE2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring variables"/>
+            <declare name="num, i, r, sum" type="Integer" array="False" size=""/>
+            <comment text="r is the looping variable"/>
+            <output expression="&quot;Enter the number&quot;" newline="True"/>
+            <input variable="i"/>
+            <output expression="&quot;Enter the number of times to be added&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="r" start="1" end="num" direction="inc" step="1">
+                <assign variable="sum" expression="i+r"/>
+                <output expression="i&amp;&quot;+&quot;&amp;r&amp;&quot;=&quot;&amp;sum" newline="True"/>
+                <assign variable="sum" expression="0"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:23:03 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzEwOjE4OjA4IEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzEwOjIzOjAzIEFNOzE7MzE1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="first, second, third, i, num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of times&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="first" expression="0"/>
+            <assign variable="second" expression="1"/>
+            <assign variable="i" expression="0"/>
+            <output expression="first" newline="True"/>
+            <output expression="second" newline="True"/>
+            <while expression="i&lt;num-2">
+                <assign variable="third" expression="first+second"/>
+                <output expression="third" newline="True"/>
+                <assign variable="first" expression="second"/>
+                <assign variable="second" expression="third"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

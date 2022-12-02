@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:02:51 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzA5OjIxOjUxIEFNOzMwNTU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIyLTEyLTAyOzEwOjAyOjUxIEFNOzY7MzE1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i, mul, r, num1, num2" type="Integer" array="False" size=""/>
+            <comment text="i is the loop variable&#13;&#10;"/>
+            <output expression="&quot;Enter n&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="num1" expression="num"/>
+            <output expression="&quot;Enter the number of tables needed&quot;" newline="True"/>
+            <input variable="num2"/>
+            <comment text="looping the variable"/>
+            <for variable="r" start="0" end="num2" direction="inc" step="1">
+                <assign variable="num" expression="num1"/>
+                <assign variable="num" expression="num+r"/>
+                <for variable="i" start="1" end="10" direction="inc" step="1">
+                    <assign variable="mul" expression="1"/>
+                    <assign variable="mul" expression="num*i"/>
+                    <output expression="num&amp;&quot;*&quot;&amp;i&amp;&quot;=&quot;&amp;mul" newline="True"/>
+                    <comment text="printing the output"/>
+                </for>
+            </for>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <assign variable="mul" expression="1"/>
+                <assign variable="mul" expression="num*i"/>
+                <output expression="num&amp;&quot;*&quot;&amp;i&amp;&quot;=&quot;&amp;mul" newline="True"/>
+                <comment text="printing the output"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
