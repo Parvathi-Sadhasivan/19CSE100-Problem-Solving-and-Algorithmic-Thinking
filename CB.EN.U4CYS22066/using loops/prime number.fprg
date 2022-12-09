@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Parvathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 01:04:29 PM"/>
+        <attribute name="created" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTItMDk7MDE6MDA6MzYgUE07MzIyNA=="/>
+        <attribute name="edited" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTItMDk7MDE6MDQ6MjkgUE07MjszMzM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, no, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter any number&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="no" expression="num/2"/>
+            <for variable="i" start="1" end="no" direction="inc" step="1">
+                <if expression="num%i==0">
+                    <then/>
+                    <else>
+                        <output expression="num&amp;&quot;is not a prime number&quot;" newline="True"/>
+                        <breakpoint expression="" always="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
