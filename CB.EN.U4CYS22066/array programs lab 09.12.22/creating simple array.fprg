@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Parvathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 12:41:56 PM"/>
+        <attribute name="created" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTItMDk7MDk6MTI6MTQgQU07MzIxNg=="/>
+        <attribute name="edited" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTItMDk7MTI6NDE6NTYgUE07MjszMzQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numbers" type="Integer" array="True" size="10"/>
+            <comment text="declaring variables"/>
+            <declare name="i, no, r" type="Integer" array="False" size=""/>
+            <comment text="i,r are loop variablies"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter number&quot;&amp;i+1&amp;&quot;:&quot;" newline="True"/>
+                <input variable="no"/>
+                <assign variable="numbers[i]" expression="no"/>
+            </for>
+            <for variable="r" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Element&quot;&amp;r&amp;&quot;is:&quot;&amp;numbers[r]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

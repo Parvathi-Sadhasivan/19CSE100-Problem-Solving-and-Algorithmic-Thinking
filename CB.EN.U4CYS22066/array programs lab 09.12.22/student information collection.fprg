@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Parvathi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 12:46:39 PM"/>
+        <attribute name="created" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTItMDk7MDk6NDQ6NDMgQU07MzIyMw=="/>
+        <attribute name="edited" value="UGFydmF0aGk7TEFQVE9QLVVDTUNGVVFQOzIwMjItMTItMDk7MTI6NDY6MzkgUE07MTU7MzQwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <comment text="declaring variables&#13;&#10;"/>
+            <declare name="list2" type="Integer" array="True" size="4"/>
+            <declare name="marks" type="Integer" array="True" size="5"/>
+            <declare name="roll, mark1, mark2, mark3, tot, avg, mark4, mark5, i, r, m" type="Integer" array="False" size=""/>
+            <comment text="i,r,m are loop variables"/>
+            <assign variable="tot" expression="0"/>
+            <output expression="&quot;Enter number of students&quot;" newline="True"/>
+            <input variable="n"/>
+            <comment text="calculating limit for loop"/>
+            <assign variable="r" expression="8*n"/>
+            <declare name="list1" type="Integer" array="True" size="r"/>
+            <for variable="i" start="0" end="r-1" direction="inc" step="8">
+                <comment text="incrementing by 8 to append elements to the list"/>
+                <output expression="&quot;Enter roll number&quot;" newline="True"/>
+                <input variable="roll"/>
+                <assign variable="list1[i]" expression="roll"/>
+                <output expression="&quot;Enter 5 marks&quot;" newline="True"/>
+                <input variable="mark1"/>
+                <input variable="mark2"/>
+                <input variable="mark3"/>
+                <input variable="mark4"/>
+                <input variable="mark5"/>
+                <comment text="getting input"/>
+                <assign variable="tot" expression="mark1+mark2+mark3+mark5+mark4"/>
+                <assign variable="avg" expression="tot/5"/>
+                <assign variable="list1[i+1]" expression="mark1"/>
+                <assign variable="list1[i+2]" expression="mark2"/>
+                <assign variable="list1[i+3]" expression="mark3"/>
+                <assign variable="list1[i+4]" expression="mark4"/>
+                <assign variable="list1[i+5]" expression="mark5"/>
+                <assign variable="list1[i+6]" expression="tot"/>
+                <assign variable="list1[i+7]" expression="avg"/>
+            </for>
+            <for variable="m" start="0" end="r-1" direction="inc" step="1">
+                <comment text="giving out output"/>
+                <output expression="list1[m]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
