@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22066"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:51:23 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIzLTAxLTIwOzA5OjA2OjM1IEFNOzMzMTU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIzLTAxLTIwOzEwOjUwOjE3IEFNOzE7Y2IuZW4udTRjeXMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIzLTAxLTIwOzA5OjU1OjI0IEFNO2J1YmJsZSBzb3J0LmZwcmc7ODQzNA=="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2NjsyMDIyMjNNQVlDMDEwMzsyMDIzLTAxLTIwOzEwOjUxOjIzIEFNOzU7MzQxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring variables"/>
+            <declare name="lst" type="Integer" array="True" size="4"/>
+            <declare name="i, p" type="Integer" array="False" size=""/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <comment text="adding elements to an array"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;Enter input&quot;" newline="True"/>
+                <input variable="lst[i]"/>
+            </for>
+            <comment text="moving through the loop"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <for variable="p" start="i+1" end="3" direction="inc" step="1">
+                    <comment text="comparing elements"/>
+                    <if expression="lst[i]&gt;lst[p]">
+                        <then>
+                            <assign variable="b" expression="lst[i]"/>
+                            <assign variable="a" expression="lst[p]"/>
+                            <assign variable="lst[i]" expression="a"/>
+                            <assign variable="lst[p]" expression="b"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="printing the sorted output&#13;&#10;"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="lst[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
