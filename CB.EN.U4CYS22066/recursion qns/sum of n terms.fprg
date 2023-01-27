@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shiva"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 07:25:25 PM"/>
+        <attribute name="created" value="U2hpdmE7REVTS1RPUC1ONDFMQkVFOzIwMjMtMDEtMjc7MDc6MDU6NTQgUE07MjgzMQ=="/>
+        <attribute name="edited" value="U2hpdmE7REVTS1RPUC1ONDFMQkVFOzIwMjMtMDEtMjc7MDc6MjU6MjUgUE07MTsyOTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, sum, sum1" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number to find its sum:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="sum(a)" newline="True"/>
+            <output expression="sum1(a)" newline="True"/>
+        </body>
+    </function>
+    <function name="sum" type="Integer" variable="t">
+        <parameters>
+            <parameter name="p" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="t, i" type="Integer" array="False" size=""/>
+            <assign variable="t" expression="0"/>
+            <for variable="i" start="1" end="p" direction="inc" step="1">
+                <assign variable="t" expression="t+i"/>
+            </for>
+        </body>
+    </function>
+    <function name="sum1" type="Integer" variable="s">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="s" type="Integer" array="False" size=""/>
+            <assign variable="s" expression="sum(n-1)+n"/>
+        </body>
+    </function>
+</flowgorithm>

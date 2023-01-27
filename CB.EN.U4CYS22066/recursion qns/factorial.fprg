@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Shiva"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-27 07:31:14 PM"/>
+        <attribute name="created" value="U2hpdmE7REVTS1RPUC1ONDFMQkVFOzIwMjMtMDEtMjc7MDc6MjU6MzEgUE07MjgyOA=="/>
+        <attribute name="edited" value="U2hpdmE7REVTS1RPUC1ONDFMQkVFOzIwMjMtMDEtMjc7MDc6MzE6MTQgUE07MTsyOTM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fact, fact1, num" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number for which you want factorial:&quot;" newline="True"/>
+            <input variable="num"/>
+            <output expression="fact(num)" newline="True"/>
+            <output expression="fact1(num)" newline="True"/>
+        </body>
+    </function>
+    <function name="fact" type="Integer" variable="t">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="t, i" type="Integer" array="False" size=""/>
+            <assign variable="t" expression="1"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="t" expression="t*i"/>
+            </for>
+        </body>
+    </function>
+    <function name="fact1" type="Integer" variable="t">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="t" type="Integer" array="False" size=""/>
+            <if expression="n==1">
+                <then>
+                    <assign variable="t" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="t" expression="fact(n-1)*n"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
